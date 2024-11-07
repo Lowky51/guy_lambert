@@ -16,15 +16,35 @@ body {
 }
 .navbar-logo img {
     width: 100px;
+    margin-bottom: -10px;
+    margin-top: -10px;
 }
+
+.navbar-img {
+    display: flex;                
+    justify-content: flex-end;    
+    gap: 3em;   
+    margin-right: -45%; 
+}
+
+.navbar-img a img {
+    width: 50px;
+    height: auto;
+    
+}
+
 .navbar-menu {
     display: flex;
     gap: 1em;
+    margin-left: -55vh;
     
 }
 .navbar-menu a {
-    color: white;
+    color: black;
+    font-weight: bold;
     text-decoration: none;
+    display: block;
+    gap: 50px;
     padding: 0.5em 1em;
     transition: background-color 0.3s;
     
@@ -55,7 +75,7 @@ label #burger div {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: black;
     width: 80%;
     height: 10%;
     border-radius: 20px;
@@ -120,13 +140,13 @@ label {
 
 
 /* Styles responsive */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .navbar-menu {
         display: none;
         flex-direction: column;
-        width: 25%;
+        width: 30%;
         position: absolute; 
-        top: 6.15em;
+        top: 5em;
         text-align: center;
         justify-items: end;
         right: 0; /* Change de 'left' à 'right' */
@@ -139,4 +159,12 @@ label {
     .burger {
         display: block;
     }
+
+    .navbar-img {
+        display: flex;                
+        justify-content: flex-end;    
+        gap: 1em;   
+        margin-right: -20%; 
+    }
+    
 }
