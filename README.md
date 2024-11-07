@@ -1,2 +1,2 @@
-https://lowky51.github.io/guy_lambert/acceuil.html
+https://lowky51.github.io/guy_lambert/html/acceuil.html
 
