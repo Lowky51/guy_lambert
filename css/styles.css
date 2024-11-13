@@ -1,11 +1,12 @@
 /*  PALETTE DE COULEUR #968664  #3D2C12*/
 
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #968664;
+    overflow-x: hidden;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -13,7 +14,12 @@ body {
     padding: 1em;
     background-color: #3D2C12;
     color: white;
+    width: 100vw; 
+    box-sizing: border-box; 
+    overflow: hidden; 
 }
+
+
 .navbar-logo img {
     width: 100px;
     margin-bottom: -10px;
@@ -30,15 +36,14 @@ body {
 .navbar-img a img {
     width: 50px;
     height: auto;
-    
 }
 
 .navbar-menu {
     display: flex;
     gap: 1em;
     margin-left: -55vh;
-    
 }
+
 .navbar-menu a {
     color: white;
     font-weight: bold;
@@ -47,14 +52,11 @@ body {
     gap: 50px;
     padding: 0.5em 1em;
     transition: background-color 0.3s;
-    
 }
+
 .navbar-menu a:hover {
     background-color: #3D2C12;
 }
-
-
-
 
 .burger {
     display: none;
@@ -79,10 +81,7 @@ label #burger div {
     width: 80%;
     height: 10%;
     border-radius: 20px;
-    /*  trnasition: propriété / durée / délai d'attente  */
     transition: top 0.5s 0.5s, width 0.5s 0.75s, transform 0.5s;
-
-
 }
 
 /* grace au combinateur "+", on peut chercher un élément qui en suit directement un autre, ici :
@@ -90,14 +89,11 @@ on désigne un bouton qui se trouverait juste apres une case a cocher cochée  *
 
 #case_secrete:checked + label #burger div {
     transition: top 0.5s 0.25s, width 0.5s, transform 0.5s 0.75s;
-
 }
 
 label #burger div:first-child {
     top: 30%;
-
 }
-
 
 label #burger div:last-child {
     top: 70%;
@@ -108,7 +104,6 @@ label #burger div:last-child {
 #case_secrete:checked + label #burger div:first-child,
 #case_secrete:checked + label #burger div:last-child {
     top: 50%;
-
 }
 
 #case_secrete:checked + label #burger div:nth-child(2) {
@@ -118,16 +113,13 @@ label #burger div:last-child {
 
 #case_secrete:checked + label #burger div:first-child {
     transform: translate(-50%, -50%) rotate(45deg);
-
 }
 
 #case_secrete:checked + label #burger div:last-child {
     transform: translate(-50%, -50%) rotate(-45deg);
-
 }
 
 /********************************/
-
 
 #case_secrete {
     display: none;
@@ -138,9 +130,9 @@ label {
     width: fit-content;
 }
 
-
 /* Styles responsive */
 @media (max-width: 1000px) {
+
     .navbar-menu {
         display: none;
         flex-direction: column;
@@ -149,15 +141,18 @@ label {
         top: 5em;
         text-align: center;
         justify-items: end;
-        right: 0; /* Change de 'left' à 'right' */
+        right: 0;
         background-color: #3D2C12;
         padding: 1em 0;
     }
+
     .navbar-menu.active {
         display: flex;
     }
+
     .burger {
         display: block;
+        margin-right: 1em;
     }
 
     .navbar-img {
@@ -166,56 +161,194 @@ label {
         gap: 1em;   
         margin-right: -20%; 
     }
+
+    .navbar {
+        width: 100vw; /* Utilise 100% de la largeur de la fenêtre */
+    }
     
 }
 
+/********************POSITIONEMENT 5 PREMIERE IMAGE**************************************/
 
 h1 {
-    margin-top: 1.5em;
     text-align: center;
+    font-family: "MedievalSharp", cursive;
+    font-size: 45px;
+    border: 3px solid black;
+    width: 500px;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-style: double;
 }
 
 .container_1 {
     display: flex;
-
     width: 83.3%;
     height: 100%;
-    margin-left: 19vh;
+    margin: auto
 }
 
-.container_1 div:first-child img:first-child {
-    width: 45em;
-    height: 40em;
+    /*DEUXIEME PHOTO*/
+.image1-container  img{
+    width: 140%;
+    height: auto;
+}
+
+    /*DEUXIEME PHOTO*/
+.image2-container img{
+    display: flex;
+    width: 140%;
+    height: 11.8vw;
+    margin-top: 2em;
+    /*829.5 x 215.45*/
+}
+
+.image3-container img {
+    display: flex;
+    width: 59%;
+    height: auto;
+    margin-left: 35%;
+    margin-top: 0em;
+}
+
+.image4-container img{
+    display: flex;
+    width: 59%;
+    height: auto;
+    margin-left: 35%;
+    margin-top: 3%;
+}
+
+.image5-container img{
+    display: flex;
+    width: 59%;
+    height: auto;
+    margin-left: 35%;
+    margin-top: 2em;
+}
+
+
+/**************************************FIN**************************************/
+
+
+
+@media (max-width: 1000px) {
+
+    h1 {
+        margin-top: 1.5em;
+    }
+
+    .container_1 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    /*PREMIERE PHOTO*/
+    .container_1 div:first-child img:first-child {
+        width: 100%;
+        height: auto;
+    }
+    /*DEUXIEME PHOTO*/
+    .container_1 div:first-child img:last-child {
+        display: flex;
+        width: 100%;
+        height: 25%;
+        margin-top: 2em;
+    }
+    
+    .image3-container img, .image4-container img, .image5-container img {
+        display: flex;
+        width: 59%;
+        height: auto;
+        margin: auto;
+        margin-top: 2em;
+        
+        
+    }
+
+    .image4-container img, .image5-container img {
+        width: 100%;
+    }
+    
     
 }
 
-.container_1 div:first-child img:last-child {
-    display: flex;
-    width: 45em;
-    height: 15.7em;
-    float: right;
-    margin-top: 8.4em;
+
+/*******************POSITIONEMENT TITRE ET BOUTON EN SAVOIR PLUS ***********************/
+
+.image4-container, .image3-container, .image5-container, .image1-container{
+    position: relative;
+    display: inline-block;
 }
 
-.container_1 div:nth-child(2) img {
-    display: flex;
-    width: 40em;
-    height: auto;
-    float: right;
+
+/* Style pour le h3 */
+.image4-container h3, .image5-container h3 {
+    position: absolute;
+    top: 2vh; 
+    left: 36%; 
+    font-size: 25px; 
+    font-weight: bold; 
+    color: white;
+    background-color: rgba(0,0,0, 0.7);
+    padding: 0.5%;
+    border-radius: 5px;
 }
 
-.container_1 div:nth-child(2) img:nth-child(2) {
-    display: flex;
-    width: 40em;
-    height: auto;
-    float: right;
-    margin-top: 8.4em;
+.image3-container h3 {
+    position: absolute; 
+    top: -1.1vh;
+    left: 36%; 
+    font-size: 25px; 
+    font-weight: bold; 
+    color: white;
+    background-color: rgba(0,0,0, 0.7);
+    padding: 0.5%;
+    border-radius: 5px;
 }
 
-.container_1 div:nth-child(2) img:last-child {
-    display: flex;
-    width: 40em;
-    height: auto;
-    float: right;
-    margin-top: 8.4em;
+.image1-container div {
+    position: absolute; 
+    top: 16vw;
+    left: 40%; 
+    width: 60%;
+    height: 30%;
+    font-size: 25px; 
+    font-weight: bold; 
+    color: white;
+    background-color: rgba(0,0,0, 0.5);
+    padding: 0.5%;
+    border-radius: 5px;
 }
+
+
+.image1-container div div h3 {
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    font-size: 25px; 
+    font-weight: bold; 
+    color: white;
+    padding: 0.5%;
+    border-radius: 5px;
+}
+
+/*STYLE POUR LE BOUTON*/
+.image4-container button, .image3-container button, .image5-container button , .image1-container div div button{
+    
+    cursor: pointer;
+    position: absolute;
+    bottom: 0; 
+    margin-bottom: 1%;
+    left: 55%; 
+    font-size: 20px; 
+    font-weight: bold; 
+    color: white;
+    background-color: rgba(150,134,100,0.5);
+    padding: 5px;
+    border: 0;
+}
+
+/*******************POSITIONEMENT FIN***********************/
