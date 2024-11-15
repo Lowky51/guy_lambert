@@ -37,6 +37,10 @@
     margin-right: 10px; /* Espace entre l'icône et le texte */
   }
 
+  .container-gauche h3 img:last-child {
+    margin-left: 10px;
+  }
+
   .container-gauche ul {
     list-style: none;
     padding-left: 30px; /* Décalage pour les sous-éléments */

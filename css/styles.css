@@ -166,20 +166,34 @@ label {
 
     .burger {
         display: block;
-        margin-right: 1em;
+        margin-right: 0.5em;
+        margin-left: 5vw;
+
     }
 
     .navbar-img {
         display: flex;                
         justify-content: flex-end;    
         gap: 1em;   
-        margin-right: -20%; 
+        margin-right: -50%; 
     }
 
     .navbar {
         width: 100vw; /* Utilise 100% de la largeur de la fenêtre */
     }
+
     
+    
+}
+
+@media (max-width: 500px) {
+
+    .navbar-img {
+        display: flex;                
+        justify-content: flex-end;    
+        gap: 1em;   
+        margin-left: -20vw;
+    }
 }
 
 /********************POSITIONEMENT 5 PREMIERE IMAGE**************************************/
@@ -328,6 +342,10 @@ h1 {
     padding: 5px;
     border: 0;
     width: 30%;
+}
+
+.image4-container button a, .image3-container button a, .image5-container button a , .image1-container div div button a{
+    color: white;
 }
 
 
@@ -606,23 +624,40 @@ footer div h4 {
 
     .image1-carre {
         margin-left: -15%;
-        margin-top: 25%;
-        width: 60%;
+        margin-top: 20vw;
+        width: 50vw;
     }
     
     .image1-container div div h3 {
-        font-size: 18px;
+        font-size: 15px;
+        margin-left: 12vw;
     }
 
     .image1-container div div button {
-        width: 60%;
+        width: 33vw;
         font-size: 15px;
-        margin-left: 5%;
+        margin-left: 2%;
     }
     
     .image3-container h3, .image4-container h3, .image5-container h3 {
         font-size: 18px;
+        margin-top: 10vw;
+        margin-left: -35%;
         
     }
+
+    .image4-container h3, .image5-container h3 {
+        margin-top: 7vw;
+    }
+
+    .image3-container button, .image4-container button, .image5-container button {
+        width: 50vw;
+        margin: auto;
+        margin-left: -29%;
+        margin-bottom: 1vw;
+        
+    }
+
+
     
 }
