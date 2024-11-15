@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles_panier.css">
     <title>Lambert Forgeron</title>
 
 </head>
+
 <body>
 
     <!------------ NAVBAR ------------>
@@ -19,14 +22,14 @@
             <a href="../html/formation.html">Formation</a>
             <a href="#contact">Contact</a>
         </div>
-        <div class="navbar-img" >   
-            <a href="../html/panier.html"><img src="../images/cart.png" alt=""></a>
+        <div class="navbar-img">
+            <button onclick="toggleCart()" ><img src="../images/cart.png" alt=""></button>
             <a href="../html/account.html"><img src="../images/account.png" alt=""></a>
-        </div> 
-    
+        </div>
+
         <input id="case_secrete" type="checkbox"> <label for="case_secrete">
 
-            <div class="burger" id="burger" >
+            <div class="burger" id="burger">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -34,9 +37,53 @@
         </label>
     </header>
 
-        <!------------ FIN NAVBAR ------------>
+    <!------------ FIN NAVBAR ------------>
 
 
-    <script src="../js/script.js" ></script>
+    
+
+<!-- Conteneur du panier -->
+<div class="cart-container" id="cartContainer">
+    <div class="cart-title">Votre panier</div>
+    <hr class="divider">
+
+    <div class="cart-item">
+        <div class="item-image"></div>
+        <div class="item-info">
+            <span>Nom objet</span>
+            <span class="item-price">451€</span>
+        </div>
+    </div>
+    <hr class="divider">
+
+    <div class="cart-item">
+        <div class="item-image"></div>
+        <div class="item-info">
+            <span>Nom objet</span>
+            <span class="item-price">451€</span>
+        </div>
+    </div>
+    <hr class="divider">
+
+    <div class="cart-item">
+        <div class="item-image"></div>
+        <div class="item-info">
+            <span>Nom objet</span>
+            <span class="item-price">451€</span>
+        </div>
+    </div>
+    <hr class="divider">
+
+    <div class="cart-total">Total: 486€</div>
+    <hr class="divider">
+</div>
+
+
+
+
+
+<script src="../js/script_panier.js"></script>
+<script src="../js/script.js"></script>
 </body>
+
 </html>

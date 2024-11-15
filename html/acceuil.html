@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles_panier.css">
     <title>Lambert Forgeron</title>
 
 </head>
@@ -25,7 +26,7 @@
             <a href="#contact">Contact</a>
         </div>
         <div class="navbar-img">
-            <a href="../html/panier.html"><img src="../images/cart.png" alt=""></a>
+            <button onclick="toggleCart()" ><img src="../images/cart.png" alt=""></button>
             <a href="../html/account.html"><img src="../images/account.png" alt=""></a>
         </div>
 
@@ -40,6 +41,44 @@
     </header>
 
     <!------------ FIN NAVBAR ------------>
+
+
+        <!-- Conteneur du panier -->
+<div class="cart-container" id="cartContainer">
+    <div class="cart-title">Votre panier</div>
+    <hr class="divider">
+
+    <div class="cart-item">
+        <div class="item-image"></div>
+        <div class="item-info">
+            <span>Nom objet</span>
+            <span class="item-price">451€</span>
+        </div>
+    </div>
+    <hr class="divider">
+
+    <div class="cart-item">
+        <div class="item-image"></div>
+        <div class="item-info">
+            <span>Nom objet</span>
+            <span class="item-price">451€</span>
+        </div>
+    </div>
+    <hr class="divider">
+
+    <div class="cart-item">
+        <div class="item-image"></div>
+        <div class="item-info">
+            <span>Nom objet</span>
+            <span class="item-price">451€</span>
+        </div>
+    </div>
+    <hr class="divider">
+
+    <div class="cart-total">Total: 486€</div>
+    <hr class="divider">
+</div>
+
 
     <!-- DEBUT PREMIER PAGE 5 PHOTO -->
 
@@ -84,9 +123,9 @@
     <!-- FIN PREMIER PAGE 5 PHOTO -->
 
     <!-- DEBUT PREMIER PAGE FORMATION -->
-
-    <h2>FORMATION</h2>
-
+    <div class="parchemin">
+        <h2>FORMATION</h2>
+    </div>
     <div class="container_2">
         <div class="video_page1">
             <iframe src="https://www.youtube.com/embed/4UV3V1lrZqU" frameborder="0"
@@ -131,6 +170,12 @@
 
 
 
+
+
+
+
+
+    <script src="../js/script_panier.js" ></script>
     <script src="../js/script.js"></script>
 </body>
 

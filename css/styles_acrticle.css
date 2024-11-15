@@ -1,0 +1,125 @@
+
+.container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    border: black solid 1px;
+}
+/* Section de l'image de l'objet */
+.image-section {
+    background-color: #4F5C6E;
+    width: 35vw;
+    height: 35vw;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+/* Section de description */
+.description-section {
+    margin-top: 2vw;
+    width: 30vw;
+    /* border: 3px solid black; */
+}
+.description-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    width: 20vw;
+    margin-left: 2vw;
+    border: none;
+}
+.desc-item {
+    font-size: 14px;
+    line-height: 1.6;
+    width: 25vw;
+    height: 20vw;
+    margin-left: 3vw;
+    color: #333;
+    /* border: 3px solid black;     */
+}
+/* Personnalisation */
+.customize {
+    margin-top: 20px;
+}
+.customize label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    margin-left: 3vw;
+}
+.customize input[type="text"] {
+    width: 40%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-left: 3vw;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+/* Avis section */
+.reviews-section {
+    background-color: #8B6B3C;
+    padding: 20px;
+    width: 10vw;
+    height: 30vw;
+    border-radius: 8px;
+    color: #333;
+    margin-top: 5vw;
+    
+}
+.reviews-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0em;
+}
+.review-item {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.review-item span {
+    font-weight: bold;
+}
+/* Étoiles de notation */
+.stars {
+    color: #FFD700;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+/* Boutons et select */
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 3vw;
+}
+.quantity-select {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    background-color: #8B6B3C;
+    color: #fff;
+}
+.btn {
+    background-color: #4F5C6E;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #736246;
+}
+/* Stock message */
+.stock-message {
+    font-size: 14px;
+    line-height: 1.6;
+    width: 25vw;
+    height: 2vw;
+    margin-left: 3vw;
+    color: #333;
+    /* border: red solid 3px; */
+}

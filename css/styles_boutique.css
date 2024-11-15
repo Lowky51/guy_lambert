@@ -1,0 +1,194 @@
+.wrapper {
+    display: flex;
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  }
+
+  /* Style pour le conteneur gauche */
+  .container-gauche {
+    width: 15vw;
+    height: 110%;            
+    background-color: #D3C8B4; 
+    color: black;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); 
+  }
+  
+  /* Style pour le reste du contenu de la page */
+  .content {
+    flex: 1;                 /* Prend le reste de l'espace disponible */
+    padding: 20px;
+  }
+
+  .content h3 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .container-gauche h3 {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Change le curseur pour indiquer un élément cliquable */
+  }
+
+  .container-gauche h3 i {
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+  }
+
+  .container-gauche ul {
+    list-style: none;
+    padding-left: 30px; /* Décalage pour les sous-éléments */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .container-gauche ul li {
+    margin: 5px 0;
+    margin-left: 10px;
+  }
+
+  /* Style pour les éléments principaux et les sous-éléments */
+  .section-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  h3 img {
+    width: 20px;
+    margin-right: 5px;
+  }
+
+  /* Cache les sous-listes par défaut */
+  ul ul {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+  }
+
+  /* Effet pour les titres ouverts */
+  .open {
+    font-weight: bold;
+  }
+
+a {
+    text-decoration: none;
+}
+
+li a {
+    color: black;
+}
+
+.content h4 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0.5em;
+}
+
+/* ********************* */
+
+
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+    /* border: solid black 3px; */
+}
+
+.section-left {
+    width: 45%;
+}
+
+.section-left h4 {
+    margin-top: 0;
+    font-size: px;
+    font-weight: bold;
+}
+
+.section-left p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.knife-images {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.knife-image img {
+    width: 18vw;
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.section-right img{
+    width: 40vw;
+    height: 25vw;
+    margin-right: 2em;
+    background-color: white;
+}
+
+.formation-section {
+    width: 40vw;
+    /* margin: auto; */
+    margin-top: 10%;
+    
+    /* border: 3px solid black; */
+}
+
+.formation-section h4 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: -10%;
+    margin-left: 10%;
+}
+
+.formation-section p {
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 2%;
+    margin-left: 10%;   
+    text-align: center;
+}
+
+.formation-button {
+    display: inline-block;
+    background-color: #736246;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin-left: 47%;
+}
+
+.video_page2 {
+    display: flex;
+    /* border: solid black 3px; */
+    margin-top: 5%;
+}
+
+.video_page2 iframe {
+    width: 37vw;
+    height: 18vw;
+}
+
+

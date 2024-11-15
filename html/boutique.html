@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles_boutique.css">
+    <link rel="stylesheet" href="../css/styles_panier.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <title>Lambert Forgeron</title>
 
 </head>
+
 <body>
 
     <!------------ NAVBAR ------------>
@@ -19,14 +25,14 @@
             <a href="../html/formation.html">Formation</a>
             <a href="#contact">Contact</a>
         </div>
-        <div class="navbar-img" >   
-            <a href="../html/panier.html"><img src="../images/cart.png" alt=""></a>
+        <div class="navbar-img">
+            <button onclick="toggleCart()" ><img src="../images/cart.png" alt=""></button>
             <a href="../html/account.html"><img src="../images/account.png" alt=""></a>
-        </div> 
-    
+        </div>
+
         <input id="case_secrete" type="checkbox"> <label for="case_secrete">
 
-            <div class="burger" id="burger" >
+            <div class="burger" id="burger">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -34,9 +40,157 @@
         </label>
     </header>
 
-        <!------------ FIN NAVBAR ------------>
+    <!------------ FIN NAVBAR ------------>
+
+        <!-- Conteneur du panier -->
+<div class="cart-container" id="cartContainer">
+    <div class="cart-title">Votre panier</div>
+    <hr class="divider">
+
+    <div class="cart-item">
+        <div class="item-image"></div>
+        <div class="item-info">
+            <span>Nom objet</span>
+            <span class="item-price">451€</span>
+        </div>
+    </div>
+    <hr class="divider">
+
+    <div class="cart-item">
+        <div class="item-image"></div>
+        <div class="item-info">
+            <span>Nom objet</span>
+            <span class="item-price">451€</span>
+        </div>
+    </div>
+    <hr class="divider">
+
+    <div class="cart-item">
+        <div class="item-image"></div>
+        <div class="item-info">
+            <span>Nom objet</span>
+            <span class="item-price">451€</span>
+        </div>
+    </div>
+    <hr class="divider">
+
+    <div class="cart-total">Total: 486€</div>
+    <hr class="divider">
+</div>
 
 
-    <script src="../js/script.js" ></script>
+<!-- FIN CART -->
+
+    <div class="wrapper">
+        <div class="container-gauche">
+            <!-- Spécialité -->
+            <h3 class="section-title"><i class="fas fa-gem"></i> Spécialité</h3>
+            <ul class="submenu">
+                <li><a href="../html/article.html">Lame Damas</a></li>
+            </ul>
+
+            <!-- Epées et Armes -->
+            <h3 class="section-title"> <img src="../images/two-swords.png" alt=""> Epées et Armes</h3>
+            <ul>
+                <li>
+                    <h3><img src="../images/sword-alt.png" alt="">Epées</h3>
+                    <ul class="submenu">
+                        <li><a href="../html/article.html">Épées de combat</a></li>
+                        <li><a href="../html/article.html">Épées balbalblat</a></li>
+                        <li><a href="../html/article.html">Épées balbalblat</a></li>
+                        <li><a href="../html/article.html">Épées balbalblat</a></li>
+                        <li><a href="../html/article.html">Épées balbalblat</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><img src="../images/axe.png" alt=""> Haches</h3>
+                    <ul class="submenu">
+                        <li><a href="../html/article.html">Hache de combat</a></li>
+                        <li><a href="../html/article.html">Hache balbalblat</a></li>
+                        <li><a href="../html/article.html">Hache balbal</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><img src="../images/knife.png" alt=""> Couteaux</h3>
+                    <ul class="submenu">
+                        <li><a href="../html/article.html">Couteau de combat</a></li>
+                        <li><a href="../html/article.html">Couteau balbalblat</a></li>
+                        <li><a href="../html/article.html">Couteau balbal</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><i class="fas fa-hammer"></i> Marteaux</h3>
+                    <ul class="submenu">
+                        <li><a href="../html/article.html">Marteau de combat</a></li>
+                        <li><a href="../html/article.html">Marteau balbalblat</a></li>
+                        <li><a href="../html/article.html">Marteau balbal</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Bijoux -->
+            <h3 class="section-title">
+                <i class="fas fa-ring"></i> Bijoux
+            </h3>
+            <ul>
+                <li>
+                    <h3><i class="fas fa-gem"></i> Pendentif</h3>
+                    <ul class="submenu">
+                        <li><a href="">Or</a></li>
+                        <li><a href="">Argent</a></li>
+                        <li><a href="">Diamant</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><i class="fas fa-ring"></i> Bague</h3>
+                    <ul class="submenu">
+                        <li><a href="">Or</a></li>
+                        <li><a href="">Argent</a></li>
+                        <li><a href="">Diamant</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>Spécialiste des lames Damas</h1>
+
+            <div class="section">
+                <div class="section-left">
+                    <h4>L'artisanat de l'acier Damas</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu nunc et metus vulputate
+                            imperdiet ut in neque. Phasellus sodales purus at dolor lectus. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. In eu nunc et metus vulputate imperdiet ut in neque.purus at
+                            dolor lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu nunc et metus
+                            vulputate imperdiet ut in neque</p>
+                        <div class="knife-images">
+                            <div class="knife-image"><img src="../images/lame_damas_1.png" alt=""></div>
+                            <div class="knife-image"><img src="../images/lame_damas_2.png" alt=""></div>
+                        </div>
+                </div>
+                <div class="section-right"><img src="../images/lamas_damas_3.png" alt=""></div>
+            </div>
+
+            <div class="video_page2">
+                <iframe src="https://www.youtube.com/embed/4UV3V1lrZqU" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+
+                <div class="formation-section">
+                    <h4>SE FORMER À L'ACIER DAMAS</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu nunc et metus vulputate imperdiet
+                        ut in neque. Phasellus sodales purus at dolor lectus. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. In eu nunc et metus vulputate imperdiet ut in neque.</p>
+                    <button class="formation-button">SE FORMER</button>
+                </div>
+            </div>
+        </div>
+
+         
+        <script src="../js/script_panier.js" ></script>
+        <script src="../js/deroulant_shop.js"></script>
+        <script src="../js/script.js"></script>
 </body>
+
 </html>

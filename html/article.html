@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles_panier.css">
+    <link rel="stylesheet" href="../css/styles_acrticle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!------------ NAVBAR ------------>
+
+    <header class="navbar">
+        <div class="navbar-logo"><a href="../html/acceuil.html"><img src="../images/logo.png" alt=""></a></div>
+        <div class="navbar-menu" id="navbar-menu">
+            <a href="../html/acceuil.html">Accueil</a>
+            <a href="../html/boutique.html">Boutique</a>
+            <a href="../html/formation.html">Formation</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="navbar-img">
+            <button onclick="toggleCart()"><img src="../images/cart.png" alt=""></button>
+            <a href="../html/account.html"><img src="../images/account.png" alt=""></a>
+        </div>
+
+        <input id="case_secrete" type="checkbox"> <label for="case_secrete">
+
+            <div class="burger" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </label>
+    </header>
+
+    <!------------ FIN NAVBAR ------------>
+
+
+    <!-- Conteneur du panier -->
+    <div class="cart-container" id="cartContainer">
+        <div class="cart-title">Votre panier</div>
+        <hr class="divider">
+
+        <div class="cart-item">
+            <div class="item-image"></div>
+            <div class="item-info">
+                <span>Nom objet</span>
+                <span class="item-price">451€</span>
+            </div>
+        </div>
+        <hr class="divider">
+
+        <div class="cart-item">
+            <div class="item-image"></div>
+            <div class="item-info">
+                <span>Nom objet</span>
+                <span class="item-price">451€</span>
+            </div>
+        </div>
+        <hr class="divider">
+
+        <div class="cart-item">
+            <div class="item-image"></div>
+            <div class="item-info">
+                <span>Nom objet</span>
+                <span class="item-price">451€</span>
+            </div>
+        </div>
+        <hr class="divider">
+
+        <div class="cart-total">Total: 486€</div>
+        <hr class="divider">
+    </div>
+
+
+    <div class="container">
+        <!-- Section de l'image -->
+        <div class="image-section"></div>
+
+        <!-- Section de description de l'objet -->
+        <div class="description-section">
+            <h2>DESCRIPTION DE L'OBJET</h2>
+            <p class="desc-item" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit eros sed vestibulum lobortis.
+                Ut quis dignissim metus, ac bibendum eros. Donec molestie nibh nulla. Donec libero lorem, tincidunt a
+                nibh quis, vulputate vehicula tortor. Ut etiam accumsan pharetra ante finibus esdum. In mattis felis id
+                urna placerat, sed sagittis nulla vestibulum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitu</p>
+
+            <!-- Section de personnalisation -->
+            <div class="customize">
+                <label>
+                    <input type="checkbox">
+                    Personnaliser l'objet <span>(Jusqu'à 19 caractères max)</span>
+                </label>
+                <input type="text" placeholder="Entrez votre texte de personnalisation">
+            </div>
+
+            <!-- Message de stock -->
+            <p class="stock-message">STOCK FAIBLE, DÉPÊCHEZ-VOUS !</p>
+
+            <!-- Sélecteur de quantité et boutons -->
+            <div class="actions">
+                <select class="quantity-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <!-- Ajoutez d'autres options si nécessaire -->
+                </select>
+                <button class="btn">Ajouter au panier</button>
+                <button class="btn">Commander</button>
+            </div>
+        </div>
+
+        <!-- Section des avis -->
+        <div class="reviews-section">
+            <h3>Avis</h3>
+            <div class="review-item">
+                <span>MICHEL</span> <span class="stars">★★★★★</span>
+                <p>J'adore votre article</p>
+            </div>
+            <div class="review-item">
+                <span>MICHEL</span> <span class="stars">★★★★★</span>
+                <p>J'adore votre article bla bla</p>
+            </div>
+            <div class="review-item">
+                <span>MICHEL</span> <span class="stars">★★★★☆</span>
+                <p>Excellent</p>
+            </div>
+            <div class="review-item">
+                <span>MICHEL</span> <span class="stars">★★☆☆☆</span>
+                <p>NUL</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script_panier.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

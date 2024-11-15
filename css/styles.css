@@ -17,6 +17,7 @@ body {
     width: 100vw; 
     box-sizing: border-box; 
     overflow: hidden; 
+    
 }
 
 
@@ -36,6 +37,19 @@ body {
 .navbar-img a img {
     width: 50px;
     height: auto;
+}
+
+.navbar-img button img {
+    width: 50px;
+    height: auto;
+    
+}
+
+.navbar-img button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    
 }
 
 .navbar-menu {
@@ -340,7 +354,13 @@ h2 {
     border-style: double;
     margin-top: 5%;
 
+
+    
+
 }
+
+
+  
 
 .container_2 {
     /* border: 3px solid black; */
