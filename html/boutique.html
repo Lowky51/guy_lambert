@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/styles_boutique.css">
     <link rel="stylesheet" href="../css/styles_panier.css">
+    <link rel="stylesheet" href="../css/styles_account_deroulant.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <title>Lambert Forgeron</title>
@@ -27,7 +28,7 @@
         </div>
         <div class="navbar-img">
             <button onclick="toggleCart()" ><img src="../images/cart.png" alt=""></button>
-            <a href="../html/account.html"><img src="../images/account.png" alt=""></a>
+            <button onclick="toggleAccount()"><img src="../images/account.png" alt=""></button>
         </div>
 
         <input id="case_secrete" type="checkbox"> <label for="case_secrete">
@@ -80,6 +81,19 @@
 
 
 <!-- FIN CART -->
+
+
+<!-- Conteneur du compte -->
+<div class="account-container" id="accountContainer">
+    <div class="account-title">Compte</div>
+    <hr class="divider">
+    <button class="account-button" >CONNEXION</button>
+    <button class="account-button" >S'INSCRIRE</button>
+
+
+</div>
+
+<!-- Conteneur du compte -->
 
     <div class="wrapper">
         <div class="container-gauche">
@@ -187,7 +201,7 @@
             </div>
         </div>
 
-         
+         <script src="../js/script_account_deroulant.js" ></script>
         <script src="../js/script_panier.js" ></script>
         <script src="../js/deroulant_shop.js"></script>
         <script src="../js/script.js"></script>

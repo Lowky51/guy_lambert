@@ -1,0 +1,71 @@
+
+
+/* Style du conteneur principal du panier */
+.account-container {
+    display: none; /* Masqué par défaut */
+    position: absolute;
+    width: 7vw;
+    background-color: #d3c8b4;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: -0.5%;
+    margin-left: 90%;
+    border: 3px solid black;
+    z-index: 1000;
+}
+
+/* Titre du panier */
+.account-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Ligne horizontale */
+.divider {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 10px 0;
+}
+
+.account-container button:first-child {
+    margin-left: 5%;
+    color: red;
+    margin-top: 0.4em;
+}
+
+
+.account-container button:last-child {
+    margin-left: 5%;
+    margin-top: 0.4em;
+}
+
+.account-button {
+    display: inline-block;
+    background-color: #736246;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin-left: 47%;
+}
+
+.account-button {
+    display: inline-block;
+    background-color: #736246;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin-left: 5%;
+}

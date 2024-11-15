@@ -4,7 +4,7 @@
     gap: 20px;
     width: 100%;
     padding: 20px;
-    border: black solid 1px;
+    /* border: black solid 1px; */
 }
 /* Section de l'image de l'objet */
 .image-section {
@@ -84,6 +84,12 @@
 /* Étoiles de notation */
 .stars {
     color: #FFD700;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.stars-1 {
+    color: white;
     font-size: 14px;
     margin-bottom: 5px;
 }

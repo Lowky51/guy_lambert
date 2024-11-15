@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/styles_panier.css">
+    <link rel="stylesheet" href="../css/styles_account_deroulant.css">
+    <link rel="stylesheet" href="../css/styles_boutique.css">
     <title>Lambert Forgeron</title>
 
 </head>
@@ -27,7 +29,7 @@
         </div>
         <div class="navbar-img">
             <button onclick="toggleCart()" ><img src="../images/cart.png" alt=""></button>
-            <a href="../html/account.html"><img src="../images/account.png" alt=""></a>
+            <button onclick="toggleAccount()"><img src="../images/account.png" alt=""></button>
         </div>
 
         <input id="case_secrete" type="checkbox"> <label for="case_secrete">
@@ -42,6 +44,17 @@
 
     <!------------ FIN NAVBAR ------------>
 
+    <!-- Conteneur du compte -->
+    <div class="account-container" id="accountContainer">
+        <div class="account-title">Compte</div>
+        <hr class="divider">
+        <button class="account-button" >CONNEXION</button>
+        <button class="account-button" >S'INSCRIRE</button>
+
+
+    </div>
+
+    <!-- Conteneur du compte -->
 
         <!-- Conteneur du panier -->
 <div class="cart-container" id="cartContainer">
@@ -174,7 +187,7 @@
 
 
 
-
+    <script src="../js/script_account_deroulant.js" ></script>
     <script src="../js/script_panier.js" ></script>
     <script src="../js/script.js"></script>
 </body>

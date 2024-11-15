@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles_panier.css">
+    <link rel="stylesheet" href="../css/styles_acrticle.css">
+    <link rel="stylesheet" href="../css/styles_account_deroulant.css">
+    <link rel="stylesheet" href="../css/styles_boutique.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!------------ NAVBAR ------------>
+
+    <header class="navbar">
+        <div class="navbar-logo"><a href="../html/acceuil.html"><img src="../images/logo.png" alt=""></a></div>
+        <div class="navbar-menu" id="navbar-menu">
+            <a href="../html/acceuil.html">Accueil</a>
+            <a href="../html/boutique.html">Boutique</a>
+            <a href="../html/formation.html">Formation</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="navbar-img">
+            <button onclick="toggleCart()"><img src="../images/cart.png" alt=""></button>
+            <button onclick="toggleAccount()"><img src="../images/account.png" alt=""></button>
+        </div>
+
+        <input id="case_secrete" type="checkbox"> <label for="case_secrete">
+
+            <div class="burger" id="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </label>
+    </header>
+
+    <!------------ FIN NAVBAR ------------>
+
+
+    <!-- Conteneur du compte -->
+    <div class="account-container" id="accountContainer">
+        <div class="account-title">Compte</div>
+        <hr class="divider">
+        <button class="account-button" >CONNEXION</button>
+        <button class="account-button" >S'INSCRIRE</button>
+
+
+    </div>
+
+    <!-- Conteneur du compte -->
+
+    <script src="../js/script_account_deroulant.js"></script>
+    <script src="../js/deroulant_shop.js"></script>
+
+    </head>
+
+    <body>
