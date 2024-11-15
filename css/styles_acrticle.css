@@ -8,11 +8,15 @@
 }
 /* Section de l'image de l'objet */
 .image-section {
-    background-color: #4F5C6E;
+    /* border: black solid; */
     width: 35vw;
     height: 35vw;
     margin-left: 3%;
     margin-top: 3%;
+}
+
+.image-section img {
+    width: 100%;
 }
 /* Section de description */
 .description-section {
