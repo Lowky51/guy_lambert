@@ -455,12 +455,21 @@ h2 {
         display: flex;
         flex-direction: column;
         height: auto;
+        
     }
 
 
-    .video_page1 {
+    .video_page1 iframe{
         width: 100%;
-        height: 50vh;
+    }
+
+    .video_page1 {
+        border: solid black 3px;
+        width: 80vw;
+        height: 45vw;
+        
+        margin: auto;
+        margin-top: 2em;
     }
 
     .container_2 p {
