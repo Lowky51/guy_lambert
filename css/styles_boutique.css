@@ -1,198 +1,270 @@
 .wrapper {
-    display: flex;
-    height: 100vh; /* Prend toute la hauteur de la fenêtre */
-  }
-
-  /* Style pour le conteneur gauche */
-  .container-gauche {
-    width: 15vw;
-    height: 110%;            
-    background-color: #D3C8B4; 
-    color: black;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3); 
-  }
-  
-  /* Style pour le reste du contenu de la page */
-  .content {
-    flex: 1;                 /* Prend le reste de l'espace disponible */
-    padding: 20px;
-  }
-
-  .content h3 {
-    text-align: center;
-    font-size: 24px;
-  }
-
-  .container-gauche h3 {
-    font-weight: bold;
-    margin-top: 20px;
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-    cursor: pointer; /* Change le curseur pour indiquer un élément cliquable */
-  }
-
-  .container-gauche h3 i {
-    margin-right: 10px; /* Espace entre l'icône et le texte */
-  }
-
-  .container-gauche h3 img:last-child {
-    margin-left: 10px;
-  }
-
-  .container-gauche ul {
-    list-style: none;
-    padding-left: 30px; /* Décalage pour les sous-éléments */
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .container-gauche ul li {
-    margin: 5px 0;
-    margin-left: 10px;
-  }
-
-  /* Style pour les éléments principaux et les sous-éléments */
-  .section-title {
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 10px;
-  }
-
-  h3 img {
-    width: 20px;
-    margin-right: 5px;
-  }
-
-  /* Cache les sous-listes par défaut */
-  ul ul {
-    display: none;
-    list-style-type: none;
-    padding-left: 20px;
-  }
-
-  /* Effet pour les titres ouverts */
-  .open {
-    font-weight: bold;
-  }
-
-a {
-    text-decoration: none;
+  display: flex;
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
 }
 
+/* Style pour le conteneur gauche */
+.container-gauche {
+  width: 15vw;
+  height: 110%;
+  background-color: #D3C8B4;
+  color: black;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Style pour le reste du contenu de la page */
+.content {
+  flex: 1; /* Prend le reste de l'espace disponible */
+  padding: 20px;
+}
+
+.content h3 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.container-gauche h3 {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Change le curseur pour indiquer un élément cliquable */
+}
+
+.container-gauche h3 i {
+  margin-right: 10px; /* Espace entre l'icône et le texte */
+}
+
+.container-gauche h3 img:last-child {
+  margin-left: 10px;
+}
+
+.container-gauche ul {
+  list-style: none;
+  padding-left: 30px; /* Décalage pour les sous-éléments */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container-gauche ul li {
+  margin: 5px 0;
+  margin-left: 10px;
+}
+
+/* Style pour les éléments principaux et les sous-éléments */
+.section-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+h3 img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+/* Cache les sous-listes par défaut */
+ul ul {
+  display: none;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+/* Effet pour les titres ouverts */
+.open {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  }
+
 li a {
-    color: black;
+  color: black;
 }
 
 .content h4 {
-    text-align: center;
-    font-size: 30px;
-    margin-top: 0.5em;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0.5em;
 }
 
-/* ********************* */
-
-
-
 h1 {
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
 }
 
 .section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 40px;
-    /* border: solid black 3px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
 }
 
 .section-left {
-    width: 45%;
+  width: 45%;
 }
 
 .section-left h4 {
-    margin-top: 0;
-    font-size: px;
-    font-weight: bold;
+  margin-top: 0;
+  font-size: px;
+  font-weight: bold;
 }
 
 .section-left p {
-    line-height: 1.6;
-    margin-bottom: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .knife-images {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    justify-content: center;
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 .knife-image img {
-    width: 18vw;
-    height: 12vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
+  width: 18vw;
+  height: 12vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
 
-.section-right img{
-    width: 40vw;
-    height: 25vw;
-    margin-right: 2em;
-    background-color: white;
+.section-right img {
+  width: 40vw;
+  height: 25vw;
+  margin-right: 2em;
+  background-color: white;
 }
 
 .formation-section {
-    width: 40vw;
-    /* margin: auto; */
-    margin-top: 10%;
-    
-    /* border: 3px solid black; */
+  width: 40vw;
+  margin-top: 10%;
 }
 
 .formation-section h4 {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: -10%;
-    margin-left: 10%;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: -10%;
+  margin-left: 10%;
 }
 
 .formation-section p {
-    line-height: 1.6;
-    margin-top: 0;
-    margin-bottom: 2%;
-    margin-left: 10%;   
-    text-align: center;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 2%;
+  margin-left: 10%;
+  text-align: center;
 }
 
 .formation-button {
-    display: inline-block;
-    background-color: #736246;
-    color: #fff;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    border: none;
-    margin-left: 47%;
+  display: inline-block;
+  background-color: #736246;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  margin-left: 47%;
 }
 
 .video_page2 {
-    display: flex;
-    /* border: solid black 3px; */
-    margin-top: 5%;
+  display: flex;
+  margin-top: 5%;
 }
 
 .video_page2 iframe {
-    width: 37vw;
-    height: 18vw;
+  width: 37vw;
+  height: 18vw;
 }
 
+@media (max-width: 1200px) {
+  .wrapper {
+      flex-direction: column;
+  }
+
+  .container-gauche {
+      width: 100%;
+      height: auto;
+      padding: 25%;
+      padding-top: 0;
+      padding-bottom: 0;
+  
+  }
+
+  .container-gauche h3 {
+      margin: 0;
+      margin-top: 10px;
+      align-items: baseline;
+      
+     
+  }
+
+  .container-gauche ul {
+      padding: 0;
+      margin: 0;
+      /* text-align: center; */
+      align-items: end;
+  }
+
+  .container-gauche ul li {
+      display: block;
+  }
+
+  .content {
+      padding: 20px;
+  }
+
+  .section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .section-left, .section-right {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .section-right img {
+      width: 100%;
+      height: auto;
+  }
+
+  .video_page2 {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .video_page2 iframe {
+      width: 100%;
+      height: auto;
+  }
+
+  .formation-section {
+      width: 100%;
+      margin-top: 20px;
+  }
+
+  .formation-section h4 {
+      margin-left: 0;
+  }
+
+  .formation-section p {
+      margin-left: 0;
+  }
+
+  .formation-button {
+      margin-left: 0;
+      display: block;
+      margin: 20px auto;
+  }
+}
 

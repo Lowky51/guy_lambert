@@ -133,3 +133,73 @@
     color: #333;
     /* border: red solid 3px; */
 }
+
+
+
+@media (max-width: 1150px) {
+    .container {
+        display: block;
+        padding: 0;
+    }
+
+    .image-section {
+        margin: auto;
+        height: auto;
+    }
+
+    .image-section img {
+        margin-left: -85%;
+        margin-top: 10px;
+        padding: 0;
+        width: 100vw;
+    }
+
+    .description-section {
+        margin: auto;
+    }
+
+    .description-section h2 {
+        margin-left: -75%;
+        width: 70vw;
+    }
+    
+
+    .desc-item {
+        margin-left: -75%;
+        width: 70vw;
+        height: auto;
+    }
+
+    .customize label {
+        width: 70vw;
+        margin-left: -75%;
+
+    }
+
+    .customize input[type="text"] {
+        width: 70vw;
+        margin-left: -75%;
+
+    }
+
+    .stock-message {
+        margin-left: -75%;
+
+        width: 50vw;
+    }
+
+    .actions {
+        margin-left: -75%;
+        width: 100vw;
+        margin-bottom: 50px;
+    }
+
+
+
+
+    .reviews-section {
+        margin: auto;
+        height: auto;
+        width: 45vw;
+    }
+}

@@ -1,0 +1,65 @@
+.form-free {
+    margin: auto;
+}
+
+.form-free h2 {
+    width:  40vw;
+}
+
+.video {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vw;
+    padding: 35px;
+    
+}
+
+.video div iframe {
+    width: 22vw;
+    height: 15vw
+}
+
+.line {
+    background-color: #CCBEA3;
+    margin: auto;
+    width: 75%;
+    height: 0.2vw;
+}
+
+.video-prem {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vw;
+    padding: 35px;
+    
+}
+
+.video-prem div {
+    background-color: #CCBEA3;
+    
+    justify-content: space-between;
+    margin-top: 2vw;
+    padding: 35px;
+    width: 18vw;
+    height: 10vw;
+
+}
+
+.video-prem div img {
+    display: flex;
+    margin: auto;
+    width: 50%;
+   
+}
+
+.form-prem button {
+    margin: auto;
+    display: flex;
+    background-color: #CCBEA3;
+    text-align: center;
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer ;
+}
